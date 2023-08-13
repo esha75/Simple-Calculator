@@ -1,0 +1,50 @@
+<html>
+<head>
+ <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="outer">
+	<div id="top"><input type="tel" id="display" class="display" value="0" disabled></div>
+	<div id="bottom" >
+		<div class="r1">
+			<input type="button" value="AC" onclick="clearDisplay()" style="color:white;font-size:30px;" />
+			<input type="button" value="DEL" onclick="del()"style="color:white; font-size:30px;"/>
+			<input type="button" value="%" onclick="setOperator('%')" style="color:white; font-size:30px;"/>
+			<input type="button"value="/" onclick="setOperator('/')" style="color:white;font-size:30px;" />
+			
+		</div>
+		<div class="r1">
+			<input type="button" value="7" onclick="appendNumber('7')" />
+			<input type="button" value="8" onclick="appendNumber('8')"/>
+			<input type="button" value="9" onclick="appendNumber('9')"/>
+			<input type="button"value="X" onclick="setOperator('*')" style="color:white;font-size:30px;"/>
+		
+		</div>
+		<div class="r1">
+			<input type="button" value="4" onclick="appendNumber('4')"/>
+			<input type="button" value="5"onclick="appendNumber('5')"/>
+			<input type="button" value="6" onclick="appendNumber('6')"/>
+			<input type="button"value="-" onclick="setOperator('-')" style="color:white;font-size:30px;"/>
+		</div>
+		<div class="r1">
+			<input type="button" value="1" onclick="appendNumber('1')"/>
+			<input type="button" value="2"onclick="appendNumber('2')"/>
+			<input type="button" value="3" onclick="appendNumber('3')"/>
+			<input type="button"value="+" onclick="setOperator('+')" style="color:white;font-size:30px;"/>
+		</div>
+		<div class="r1">
+			
+			<input type="button" value="0" onclick="appendNumber('0')"/>
+			<input type="button" value="." onclick="appendDecimal()" style="color:white;"/>
+			<input type="button"value="=" onclick="calculate()" style="width:180px; border-radius:20%;font-size:30px; color:white;"/>
+		</div>
+		
+	</div>
+
+</div>
+</body>
+<script src="calculator.js" rel="javascript" type="text/javascript">
+
+ 
+</script>
+</html>
